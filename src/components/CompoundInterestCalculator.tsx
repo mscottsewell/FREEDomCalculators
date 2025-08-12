@@ -299,7 +299,7 @@ export function CompoundInterestCalculator() {
           </CardTitle>
         </CardHeader>
         <CardContent>
-          <p className="text-sm leading-relaxed font-medium">
+          <p className="text-lg leading-relaxed font-medium">
             Albert Einstein allegedly called compound interest "the eighth wonder of the world." The magic happens when your earnings start earning their own earnings. 
             Starting early is more powerful than saving more later—a 25-year-old who saves $2,000 annually for 10 years will likely have more at retirement than someone who starts at 35 and saves $2,000 annually for 30 years. 
             Time is your greatest asset in building wealth.

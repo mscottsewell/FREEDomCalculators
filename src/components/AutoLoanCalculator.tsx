@@ -219,7 +219,7 @@ export function AutoLoanCalculator() {
           </CardTitle>
         </CardHeader>
         <CardContent>
-          <p className="text-sm leading-relaxed font-medium">
+          <p className="text-lg leading-relaxed font-medium">
             A car loan is often one of your first major financial decisions, and it sets the pattern for future choices. 
             Remember: the goal is transportation, not impressing others. A reliable used car with a shorter loan term will free up money for investments that appreciate in value. 
             Cars depreciate rapidly—don't let a car payment prevent you from building wealth in your 20s and 30s when compound interest is most powerful.

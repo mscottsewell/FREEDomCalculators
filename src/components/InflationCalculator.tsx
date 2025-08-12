@@ -202,7 +202,7 @@ export function InflationCalculator() {
           </CardTitle>
         </CardHeader>
         <CardContent>
-          <p className="text-sm leading-relaxed font-medium">
+          <p className="text-lg leading-relaxed font-medium">
             Inflation silently erodes your money's purchasing power over time. What costs $100 today will cost more tomorrow. 
             This is why keeping money in low-interest savings accounts or under your mattress actually loses value over time. 
             Smart investors protect against inflation by investing in assets that historically grow faster than inflation rates, 

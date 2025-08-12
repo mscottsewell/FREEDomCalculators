@@ -301,7 +301,7 @@ export function CreditCardCalculator() {
           </CardTitle>
         </CardHeader>
         <CardContent>
-          <p className="text-sm leading-relaxed font-medium">
+          <p className="text-lg leading-relaxed font-medium">
             Credit cards can be financial quicksand if you only make minimum payments. The average American pays over $1,000 annually in credit card interest. 
             Making just the minimum payment means most of your payment goes to interest, not reducing your debt. 
             Instead, pay more than the minimum, avoid carrying balances, and use credit cards as a tool, not a crutch. Your future self will thank you.
