@@ -226,9 +226,9 @@ export function CreditCardCalculator() {
           <CardTitle>Payment Breakdown Over Time</CardTitle>
         </CardHeader>
         <CardContent>
-          <div className="h-80 w-full">
+          <div className="h-80 w-full ml-2">
             <ResponsiveContainer width="100%" height="100%">
-              <AreaChart data={chartData}>
+              <AreaChart data={chartData} margin={{ left: 20, right: 5, top: 5, bottom: 5 }}>
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="month" />
                 <YAxis tickFormatter={(value) => formatCurrency(value)} />
