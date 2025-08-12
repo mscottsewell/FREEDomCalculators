@@ -175,8 +175,8 @@ export function InflationCalculator() {
             <ResponsiveContainer width="100%" height="100%">
               <AreaChart data={chartData} margin={{ left: 20, right: 5, top: 5, bottom: 5 }}>
                 <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="year" />
-                <YAxis tickFormatter={(value) => formatCurrency(value)} />
+                <XAxis dataKey="year" fontSize={12} />
+                <YAxis tickFormatter={(value) => formatCurrency(value)} fontSize={12} />
                 <Tooltip 
                   formatter={(value: number) => [formatCurrency(value), 'Purchasing Power']}
                   labelFormatter={(label) => `Year ${label}`}
