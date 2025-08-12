@@ -46,9 +46,9 @@ export function InflationCalculator() {
 
     const inflationFactor = Math.pow(1 + data.inflationRate / 100, data.years)
     const futureNominal = data.currentAmount * inflationFactor
-    const realPurchasingPower = data.currentAmount
-    const powerLost = futureNominal - realPurchasingPower
-    const percentageLost = ((powerLost / futureNominal) * 100)
+    const realPurchasingPower = data.currentAmount / inflationFactor
+    const powerLost = data.currentAmount - realPurchasingPower
+    const percentageLost = ((powerLost / data.currentAmount) * 100)
 
     setResults({
       futureNominal,
@@ -191,6 +191,23 @@ export function InflationCalculator() {
               </AreaChart>
             </ResponsiveContainer>
           </div>
+        </CardContent>
+      </Card>
+
+      {/* Key Lesson Section */}
+      <Card className="bg-accent/5 border-accent/20">
+        <CardHeader>
+          <CardTitle className="text-lg flex items-center gap-2">
+            💡 Key Lesson
+          </CardTitle>
+        </CardHeader>
+        <CardContent>
+          <p className="text-sm leading-relaxed font-medium">
+            Inflation silently erodes your money's purchasing power over time. What costs $100 today will cost more tomorrow. 
+            This is why keeping money in low-interest savings accounts or under your mattress actually loses value over time. 
+            Smart investors protect against inflation by investing in assets that historically grow faster than inflation rates, 
+            such as stocks, real estate, or Treasury Inflation-Protected Securities (TIPS).
+          </p>
         </CardContent>
       </Card>
     </div>

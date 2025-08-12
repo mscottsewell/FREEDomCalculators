@@ -274,6 +274,22 @@ export function MortgageCalculator() {
           </CardContent>
         </Card>
       )}
+
+      {/* Key Lesson Section */}
+      <Card className="bg-accent/5 border-accent/20">
+        <CardHeader>
+          <CardTitle className="text-lg flex items-center gap-2">
+            💡 Key Lesson
+          </CardTitle>
+        </CardHeader>
+        <CardContent>
+          <p className="text-sm leading-relaxed font-medium">
+            A mortgage is likely the largest financial commitment you'll ever make, but it can also be your greatest wealth-building tool. 
+            Real estate often appreciates over time while you pay down the debt, building equity. However, don't rush into homeownership—ensure you have an emergency fund, stable income, and are ready to stay put for several years. 
+            Consider making extra principal payments early in the loan when they have the greatest impact on total interest paid.
+          </p>
+        </CardContent>
+      </Card>
     </div>
   )
 }

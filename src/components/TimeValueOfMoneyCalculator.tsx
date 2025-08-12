@@ -335,6 +335,22 @@ export function TimeValueOfMoneyCalculator() {
           </div>
         </CardContent>
       </Card>
+
+      {/* Key Lesson Section */}
+      <Card className="bg-accent/5 border-accent/20">
+        <CardHeader>
+          <CardTitle className="text-lg flex items-center gap-2">
+            💡 Key Lesson
+          </CardTitle>
+        </CardHeader>
+        <CardContent>
+          <p className="text-sm leading-relaxed font-medium">
+            The time value of money is the foundation of all financial decisions. Every financial choice involves trading money now for money later (or vice versa). 
+            Understanding this concept helps you compare investment options, loan terms, and savings strategies on equal footing. 
+            When making any financial decision, always ask: "What is the opportunity cost of this choice, and how does time affect the value?"
+          </p>
+        </CardContent>
+      </Card>
     </div>
   )
 }
