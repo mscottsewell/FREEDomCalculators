@@ -258,11 +258,11 @@ export function CreditCardCalculator() {
         </CardContent>
       </Card>
 
-      {/* Payment Schedule Table */}
+      {/* Yearly Payment Schedule Table */}
       {schedule.length > 0 && (
         <Card>
           <CardHeader>
-            <CardTitle>Payment Schedule</CardTitle>
+            <CardTitle>Yearly Payment Schedule</CardTitle>
           </CardHeader>
           <CardContent>
             <div className="overflow-x-auto">
@@ -284,6 +284,48 @@ export function CreditCardCalculator() {
                       <TableCell className="text-right">{formatCurrency(yearData.totalPrincipal)}</TableCell>
                       <TableCell className="text-right">{formatCurrency(yearData.totalInterest)}</TableCell>
                       <TableCell className="text-right">{formatCurrency(yearData.endBalance)}</TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+            </div>
+          </CardContent>
+        </Card>
+      )}
+
+      {/* Monthly Payment Breakdown Table */}
+      {schedule.length > 0 && (
+        <Card>
+          <CardHeader>
+            <CardTitle>Monthly Payment Breakdown</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="overflow-x-auto max-h-96">
+              <Table>
+                <TableHeader>
+                  <TableRow>
+                    <TableHead className="text-left sticky top-0 bg-background">Month</TableHead>
+                    <TableHead className="text-right sticky top-0 bg-background">Payment</TableHead>
+                    <TableHead className="text-right sticky top-0 bg-background">Principal</TableHead>
+                    <TableHead className="text-right sticky top-0 bg-background">Interest</TableHead>
+                    <TableHead className="text-right sticky top-0 bg-background">Remaining Balance</TableHead>
+                  </TableRow>
+                </TableHeader>
+                <TableBody>
+                  {schedule.map((payment, index) => (
+                    <TableRow key={payment.month} className={index % 12 === 0 ? "bg-muted/30" : ""}>
+                      <TableCell className="font-medium">
+                        {payment.month}
+                        {index % 12 === 0 && (
+                          <span className="ml-2 text-xs text-muted-foreground">
+                            (Year {payment.year})
+                          </span>
+                        )}
+                      </TableCell>
+                      <TableCell className="text-right">{formatCurrency(payment.payment)}</TableCell>
+                      <TableCell className="text-right currency-blue">{formatCurrency(payment.principal)}</TableCell>
+                      <TableCell className="text-right currency-red">{formatCurrency(payment.interest)}</TableCell>
+                      <TableCell className="text-right">{formatCurrency(payment.balance)}</TableCell>
                     </TableRow>
                   ))}
                 </TableBody>

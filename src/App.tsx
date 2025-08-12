@@ -66,8 +66,8 @@ function App() {
                   value={calc.id}
                   className="flex flex-col items-center gap-2 p-3 h-auto text-xs md:text-sm"
                 >
-                  <Icon size={20} />
-                  <span className="text-center leading-tight">{calc.name}</span>
+                  <Icon size={32} />
+                  <span className="text-center leading-tight font-bold">{calc.name}</span>
                 </TabsTrigger>
               )
             })}
