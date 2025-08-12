@@ -9,6 +9,7 @@ import {
   Car, 
   House 
 } from '@phosphor-icons/react'
+import collegeLogo from '@/assets/images/college-logo.svg'
 import { InflationCalculator } from '@/components/InflationCalculator'
 import { CompoundInterestCalculator } from '@/components/CompoundInterestCalculator'
 import { TimeValueOfMoneyCalculator } from '@/components/TimeValueOfMoneyCalculator'
@@ -34,9 +35,12 @@ function App() {
       <div className="bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 py-6">
           <div className="flex items-center gap-4">
-            {/* Placeholder for college logo */}
-            <div className="w-16 h-16 bg-primary-foreground/20 rounded-lg flex items-center justify-center">
-              <Calculator size={32} className="text-primary-foreground" />
+            <div className="w-16 h-16 bg-white/10 rounded-lg flex items-center justify-center p-1">
+              <img 
+                src={collegeLogo} 
+                alt="College of Business Logo" 
+                className="w-full h-full object-contain"
+              />
             </div>
             <div>
               <h1 className="text-2xl md:text-3xl font-bold">
