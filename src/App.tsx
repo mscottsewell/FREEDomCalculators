@@ -9,7 +9,7 @@ import {
   Car, 
   House 
 } from '@phosphor-icons/react'
-import collegeLogo from '@/assets/images/college-logo.svg'
+import collegeLogo from '@/assets/images/FHU_COB.jpg'
 import { InflationCalculator } from '@/components/InflationCalculator'
 import { CompoundInterestCalculator } from '@/components/CompoundInterestCalculator'
 import { TimeValueOfMoneyCalculator } from '@/components/TimeValueOfMoneyCalculator'
@@ -38,7 +38,7 @@ function App() {
             <div className="w-16 h-16 bg-white/10 rounded-lg flex items-center justify-center p-1">
               <img 
                 src={collegeLogo} 
-                alt="College of Business Logo" 
+                alt="FHU College of Business Logo" 
                 className="w-full h-full object-contain"
               />
             </div>
