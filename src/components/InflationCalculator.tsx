@@ -128,6 +128,7 @@ export function InflationCalculator() {
                 {formatCurrency(results.futureNominal)}
               </span>
             </div>
+            <hr className="border-t-2 border-border my-2" />
             <div className="flex justify-between">
               <span>Real Purchasing Power:</span>
               <span className="font-semibold currency-green">
