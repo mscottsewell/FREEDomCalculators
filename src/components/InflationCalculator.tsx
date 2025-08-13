@@ -128,7 +128,6 @@ export function InflationCalculator() {
                 {formatCurrency(results.futureNominal)}
               </span>
             </div>
-            <hr className="border-t-2 border-border my-2" />
             <div className="flex justify-between">
               <span>Real Purchasing Power:</span>
               <span className="font-semibold currency-green">
@@ -156,11 +155,12 @@ export function InflationCalculator() {
           </CardHeader>
           <CardContent>
             <p className="text-lg leading-relaxed">
-              With inflation at {data.inflationRate}% per year, your {formatCurrency(data.currentAmount)} today 
-              will have the same purchasing power as {formatCurrency(results.realPurchasingPower)} in {data.years} years. <br/> <br/>
               You would need {formatCurrency(results.futureNominal)} in {data.years} years to buy  
-              what {formatCurrency(data.currentAmount)} can buy today. This represents a loss of purchasing power 
-              of {results.percentageLost.toFixed(1)}%.
+              what {formatCurrency(data.currentAmount)} can buy today. 
+              <br/> <br/>
+              With inflation at {data.inflationRate}% per year, your {formatCurrency(data.currentAmount)} today 
+              will have the same purchasing power as {formatCurrency(results.realPurchasingPower)} in {data.years} years.
+              This represents a loss of purchasing power of {results.percentageLost.toFixed(1)}%.
             </p>
           </CardContent>
         </Card>
