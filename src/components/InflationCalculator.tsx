@@ -154,11 +154,11 @@ export function InflationCalculator() {
             <CardTitle className="text-lg">What This Means</CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-sm leading-relaxed">
+            <p className="text-lg leading-relaxed">
               With inflation at {data.inflationRate}% per year, your {formatCurrency(data.currentAmount)} today 
-              will have the same purchasing power as {formatCurrency(results.realPurchasingPower)} in {data.years} years. 
-              You would need {formatCurrency(results.futureNominal)} in {data.years} years to buy what 
-              {formatCurrency(data.currentAmount)} can buy today. This represents a loss of purchasing power 
+              will have the same purchasing power as {formatCurrency(results.realPurchasingPower)} in {data.years} years. <br/> <br/>
+              You would need {formatCurrency(results.futureNominal)} in {data.years} years to buy  
+              what {formatCurrency(data.currentAmount)} can buy today. This represents a loss of purchasing power 
               of {results.percentageLost.toFixed(1)}%.
             </p>
           </CardContent>
@@ -205,8 +205,7 @@ export function InflationCalculator() {
           <p className="text-lg leading-relaxed font-medium">
             Inflation silently erodes your money's purchasing power over time. What costs $100 today will cost more tomorrow. 
             This is why keeping money in low-interest savings accounts or under your mattress actually loses value over time. 
-            Smart investors protect against inflation by investing in assets that historically grow faster than inflation rates, 
-            such as stocks, real estate, or Treasury Inflation-Protected Securities (TIPS).
+            Smart investors protect against inflation by investing in assets that historically grow at a faster rate than inflation.
           </p>
         </CardContent>
       </Card>
