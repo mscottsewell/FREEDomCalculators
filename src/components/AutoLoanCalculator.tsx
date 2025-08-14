@@ -187,11 +187,11 @@ export function AutoLoanCalculator() {
               <Table>
                 <TableHeader>
                   <TableRow>
-                    <TableHead className="text-left w-16">Month</TableHead>
-                    <TableHead className="text-right">Payment</TableHead>
-                    <TableHead className="text-right">Principal</TableHead>
-                    <TableHead className="text-right">Interest</TableHead>
-                    <TableHead className="text-right pr-4">Balance</TableHead>
+                    <TableHead className="text-left w-16 table-header-shaded">Month</TableHead>
+                    <TableHead className="text-right table-header-shaded">Payment</TableHead>
+                    <TableHead className="text-right table-header-shaded">Principal</TableHead>
+                    <TableHead className="text-right table-header-shaded">Interest</TableHead>
+                    <TableHead className="text-right pr-4 table-header-shaded">Balance</TableHead>
                   </TableRow>
                 </TableHeader>
                 <TableBody>
@@ -200,7 +200,7 @@ export function AutoLoanCalculator() {
                       <TableCell className="font-medium">{payment.month}</TableCell>
                       <TableCell className="text-right">{formatCurrency(payment.payment)}</TableCell>
                       <TableCell className="text-right">{formatCurrency(payment.principal)}</TableCell>
-                      <TableCell className="text-right">{formatCurrency(payment.interest)}</TableCell>
+                      <TableCell className="text-right currency-red">{formatCurrency(payment.interest)}</TableCell>
                       <TableCell className="text-right pr-4">{formatCurrency(payment.balance)}</TableCell>
                     </TableRow>
                   ))}

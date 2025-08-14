@@ -216,11 +216,11 @@ export function MortgageCalculator() {
               <Table>
                 <TableHeader>
                   <TableRow>
-                    <TableHead className="text-left">Year</TableHead>
-                    <TableHead className="text-right">Total Payment</TableHead>
-                    <TableHead className="text-right">Total Principal</TableHead>
-                    <TableHead className="text-right">Total Interest</TableHead>
-                    <TableHead className="text-right pr-4">End Balance</TableHead>
+                    <TableHead className="text-left table-header-shaded">Year</TableHead>
+                    <TableHead className="text-right table-header-shaded">Total Payment</TableHead>
+                    <TableHead className="text-right table-header-shaded">Total Principal</TableHead>
+                    <TableHead className="text-right table-header-shaded">Total Interest</TableHead>
+                    <TableHead className="text-right pr-4 table-header-shaded">End Balance</TableHead>
                   </TableRow>
                 </TableHeader>
                 <TableBody>
@@ -229,7 +229,7 @@ export function MortgageCalculator() {
                       <TableCell className="font-medium">{yearData.year}</TableCell>
                       <TableCell className="text-right">{formatCurrency(yearData.totalPayment)}</TableCell>
                       <TableCell className="text-right">{formatCurrency(yearData.totalPrincipal)}</TableCell>
-                      <TableCell className="text-right">{formatCurrency(yearData.totalInterest)}</TableCell>
+                      <TableCell className="text-right currency-red">{formatCurrency(yearData.totalInterest)}</TableCell>
                       <TableCell className="text-right pr-4">{formatCurrency(yearData.endBalance)}</TableCell>
                     </TableRow>
                   ))}
@@ -251,11 +251,11 @@ export function MortgageCalculator() {
               <Table>
                 <TableHeader>
                   <TableRow>
-                    <TableHead className="text-left w-16">Month</TableHead>
-                    <TableHead className="text-right">Payment</TableHead>
-                    <TableHead className="text-right">Principal</TableHead>
-                    <TableHead className="text-right">Interest</TableHead>
-                    <TableHead className="text-right pr-4">Balance</TableHead>
+                    <TableHead className="text-left w-16 table-header-shaded">Month</TableHead>
+                    <TableHead className="text-right table-header-shaded">Payment</TableHead>
+                    <TableHead className="text-right table-header-shaded">Principal</TableHead>
+                    <TableHead className="text-right table-header-shaded">Interest</TableHead>
+                    <TableHead className="text-right pr-4 table-header-shaded">Balance</TableHead>
                   </TableRow>
                 </TableHeader>
                 <TableBody>
@@ -264,7 +264,7 @@ export function MortgageCalculator() {
                       <TableCell className="font-medium">{payment.month}</TableCell>
                       <TableCell className="text-right">{formatCurrency(payment.payment)}</TableCell>
                       <TableCell className="text-right">{formatCurrency(payment.principal)}</TableCell>
-                      <TableCell className="text-right">{formatCurrency(payment.interest)}</TableCell>
+                      <TableCell className="text-right currency-red">{formatCurrency(payment.interest)}</TableCell>
                       <TableCell className="text-right pr-4">{formatCurrency(payment.balance)}</TableCell>
                     </TableRow>
                   ))}

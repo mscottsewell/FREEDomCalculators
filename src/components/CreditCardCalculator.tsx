@@ -269,11 +269,11 @@ export function CreditCardCalculator() {
               <Table>
                 <TableHeader>
                   <TableRow>
-                    <TableHead className="text-left">Year</TableHead>
-                    <TableHead className="text-right">Total Payment</TableHead>
-                    <TableHead className="text-right">Total Principal</TableHead>
-                    <TableHead className="text-right">Total Interest</TableHead>
-                    <TableHead className="text-right">End Balance</TableHead>
+                    <TableHead className="text-left table-header-shaded">Year</TableHead>
+                    <TableHead className="text-right table-header-shaded">Total Payment</TableHead>
+                    <TableHead className="text-right table-header-shaded">Total Principal</TableHead>
+                    <TableHead className="text-right table-header-shaded">Total Interest</TableHead>
+                    <TableHead className="text-right table-header-shaded">End Balance</TableHead>
                   </TableRow>
                 </TableHeader>
                 <TableBody>
@@ -282,7 +282,7 @@ export function CreditCardCalculator() {
                       <TableCell className="font-medium">{yearData.year}</TableCell>
                       <TableCell className="text-right">{formatCurrency(yearData.totalPayment)}</TableCell>
                       <TableCell className="text-right">{formatCurrency(yearData.totalPrincipal)}</TableCell>
-                      <TableCell className="text-right">{formatCurrency(yearData.totalInterest)}</TableCell>
+                      <TableCell className="text-right currency-red">{formatCurrency(yearData.totalInterest)}</TableCell>
                       <TableCell className="text-right">{formatCurrency(yearData.endBalance)}</TableCell>
                     </TableRow>
                   ))}
@@ -304,11 +304,11 @@ export function CreditCardCalculator() {
               <Table>
                 <TableHeader>
                   <TableRow>
-                    <TableHead className="text-left sticky top-0 bg-background">Month</TableHead>
-                    <TableHead className="text-right sticky top-0 bg-background">Payment</TableHead>
-                    <TableHead className="text-right sticky top-0 bg-background">Principal</TableHead>
-                    <TableHead className="text-right sticky top-0 bg-background">Interest</TableHead>
-                    <TableHead className="text-right sticky top-0 bg-background">Remaining Balance</TableHead>
+                    <TableHead className="text-left sticky top-0 bg-muted table-header-shaded">Month</TableHead>
+                    <TableHead className="text-right sticky top-0 bg-muted table-header-shaded">Payment</TableHead>
+                    <TableHead className="text-right sticky top-0 bg-muted table-header-shaded">Principal</TableHead>
+                    <TableHead className="text-right sticky top-0 bg-muted table-header-shaded">Interest</TableHead>
+                    <TableHead className="text-right sticky top-0 bg-muted table-header-shaded">Remaining Balance</TableHead>
                   </TableRow>
                 </TableHeader>
                 <TableBody>
