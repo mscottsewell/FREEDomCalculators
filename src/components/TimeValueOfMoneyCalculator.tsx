@@ -194,6 +194,11 @@ export function TimeValueOfMoneyCalculator() {
     return data[field]
   }
 
+  const getInputPlaceholder = (field: keyof TVMData, defaultPlaceholder: string) => {
+    if (data.solveFor === field) return ''
+    return defaultPlaceholder
+  }
+
   const isFieldDisabled = (field: keyof TVMData) => {
     return data.solveFor === field
   }
@@ -225,7 +230,7 @@ export function TimeValueOfMoneyCalculator() {
             type="number"
             value={getInputValue('periods')}
             onChange={(e) => updateData('periods', Number(e.target.value))}
-            placeholder="20"
+            placeholder={getInputPlaceholder('periods', '20')}
             disabled={isFieldDisabled('periods')}
             className={isFieldDisabled('periods') ? 'bg-muted' : ''}
           />
@@ -239,7 +244,7 @@ export function TimeValueOfMoneyCalculator() {
             step="0.1"
             value={getInputValue('interestRate')}
             onChange={(e) => updateData('interestRate', Number(e.target.value))}
-            placeholder="7"
+            placeholder={getInputPlaceholder('interestRate', '7')}
             disabled={isFieldDisabled('interestRate')}
             className={isFieldDisabled('interestRate') ? 'bg-muted' : ''}
           />
@@ -252,7 +257,7 @@ export function TimeValueOfMoneyCalculator() {
             type="number"
             value={getInputValue('presentValue')}
             onChange={(e) => updateData('presentValue', Number(e.target.value))}
-            placeholder="-10000"
+            placeholder={getInputPlaceholder('presentValue', '-10000')}
             disabled={isFieldDisabled('presentValue')}
             className={isFieldDisabled('presentValue') ? 'bg-muted' : ''}
           />
@@ -265,7 +270,7 @@ export function TimeValueOfMoneyCalculator() {
             type="number"
             value={getInputValue('payment')}
             onChange={(e) => updateData('payment', Number(e.target.value))}
-            placeholder="-500"
+            placeholder={getInputPlaceholder('payment', '-500')}
             disabled={isFieldDisabled('payment')}
             className={isFieldDisabled('payment') ? 'bg-muted' : ''}
           />
@@ -278,7 +283,7 @@ export function TimeValueOfMoneyCalculator() {
             type="number"
             value={getInputValue('futureValue')}
             onChange={(e) => updateData('futureValue', Number(e.target.value))}
-            placeholder="0"
+            placeholder={getInputPlaceholder('futureValue', '0')}
             disabled={isFieldDisabled('futureValue')}
             className={isFieldDisabled('futureValue') ? 'bg-muted' : ''}
           />
