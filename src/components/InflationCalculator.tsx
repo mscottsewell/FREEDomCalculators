@@ -205,9 +205,10 @@ export function InflationCalculator() {
         </CardHeader>
         <CardContent>
           <p className="text-lg leading-relaxed font-medium">
-            Inflation silently erodes your money's purchasing power over time. What costs $100 today will cost more tomorrow. 
-            This is why keeping money in low-interest savings accounts or under your mattress actually loses value over time. 
-            Smart investors protect against inflation by investing in assets that historically grow at a faster rate than inflation.
+                <strong>Inflation is the silent wealth killer.</strong> Even at modest rates like 3% annually, inflation significantly erodes your purchasing power over time. 
+                This is why keeping money in low-yield savings accounts or "under the mattress" actually causes you to lose money in real terms. 
+                To preserve and grow wealth, your investments must earn returns that exceed the inflation rate. Understanding inflation's impact 
+                is crucial for making informed decisions about saving, investing, and financial planning.
           </p>
         </CardContent>
       </Card>

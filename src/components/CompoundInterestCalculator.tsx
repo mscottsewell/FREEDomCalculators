@@ -300,9 +300,11 @@ export function CompoundInterestCalculator() {
         </CardHeader>
         <CardContent>
           <p className="text-lg leading-relaxed font-medium">
-            Albert Einstein allegedly called compound interest "the eighth wonder of the world." The magic happens when your earnings start earning their own earnings. 
-            Starting early is more powerful than saving more later—a 25-year-old who saves $2,000 annually for 10 years will likely have more at retirement than someone who starts at 35 and saves $2,000 annually for 30 years. 
-            Time is your greatest asset in building wealth.
+              <strong>Albert Einstien called compound interest "the eighth wonder of the world."</strong> 
+              The earlier you start investing, the more time your money has to grow exponentially. 
+              Even small amounts invested regularly can become substantial wealth over time due to compounding. The key is starting early and being consistent - 
+              time in the market is more powerful than timing the market. A 25-year-old who saves $200/month will have significantly more at retirement than 
+              a 35-year-old who saves $400/month, simply because of those extra 10 years of compound growth.
           </p>
         </CardContent>
       </Card>

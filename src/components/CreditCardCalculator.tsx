@@ -344,9 +344,10 @@ export function CreditCardCalculator() {
         </CardHeader>
         <CardContent>
           <p className="text-lg leading-relaxed font-medium">
-            Credit cards can be financial quicksand if you only make minimum payments. The average American pays over $1,000 annually in credit card interest. 
-            Making just the minimum payment means most of your payment goes to interest, not reducing your debt. 
-            Instead, pay more than the minimum, avoid carrying balances, and use credit cards as a tool, not a crutch. Your future self will thank you.
+              <strong>Credit cards can be wealth destroyers if mismanaged.</strong> Making only minimum payments keeps you trapped in a cycle of debt, 
+              where most of your payment goes to interest rather than reducing the principal balance. High-interest debt is the opposite of compound interest - 
+              working against you instead of for you. Always pay more than the minimum, and prioritize paying off high-interest debt before investing. 
+              The "guaranteed return" from paying off an 18% credit card is better than most investment returns you'll find.
           </p>
         </CardContent>
       </Card>

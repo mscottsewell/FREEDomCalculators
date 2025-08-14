@@ -220,9 +220,9 @@ export function AutoLoanCalculator() {
         </CardHeader>
         <CardContent>
           <p className="text-lg leading-relaxed font-medium">
-            A car loan is often one of your first major financial decisions, and it sets the pattern for future choices. 
-            Remember: the goal is transportation, not impressing others. A reliable used car with a shorter loan term will free up money for investments that appreciate in value. 
-            Cars depreciate rapidly—don't let a car payment prevent you from building wealth in your 20s and 30s when compound interest is most powerful.
+              <strong>Cars are depreciating assets that require smart financing.</strong> Unlike a home that may appreciate, a car loses value the moment you drive it off the lot. 
+              This makes the interest rate and loan term crucial factors in your total cost. A longer loan term means lower monthly payments but significantly more interest paid over time. 
+              Consider the total cost of ownership, not just the monthly payment, and remember that reliable transportation is the goal - not impressing others with an expensive car payment.
           </p>
         </CardContent>
       </Card>

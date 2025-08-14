@@ -284,9 +284,9 @@ export function MortgageCalculator() {
         </CardHeader>
         <CardContent>
           <p className="text-lg leading-relaxed font-medium">
-            A mortgage is likely the largest financial commitment you'll ever make, but it can also be your greatest wealth-building tool. 
-            Real estate often appreciates over time while you pay down the debt, building equity. However, don't rush into homeownership—ensure you have an emergency fund, stable income, and are ready to stay put for several years. 
-            Consider making extra principal payments early in the loan when they have the greatest impact on total interest paid.
+              <strong>Your home can be your largest investment or your biggest financial mistake.</strong> A mortgage allows you to leverage borrowed money to potentially build wealth through real estate appreciation. 
+              However, the total interest paid over 30 years often equals or exceeds the original loan amount. Making extra principal payments early in the loan dramatically reduces total interest costs. 
+              Remember that a home isn't just an investment - it provides shelter and stability. Buy what you can afford, not what the bank will lend you.
           </p>
         </CardContent>
       </Card>

@@ -350,9 +350,10 @@ export function TimeValueOfMoneyCalculator() {
         </CardHeader>
         <CardContent>
           <p className="text-lg leading-relaxed font-medium">
-            The time value of money is the foundation of all financial decisions. Every financial choice involves trading money now for money later (or vice versa). 
-            Understanding this concept helps you compare investment options, loan terms, and savings strategies on equal footing. 
-            When making any financial decision, always ask: "What is the opportunity cost of this choice, and how does time affect the value?"
+            <strong>Time is your most valuable financial asset.</strong> The time value of money is the foundation of all personal finance decisions. 
+            Whether you're saving for retirement, a house, or any major purchase, understanding that money grows over time helps you make smarter choices. 
+            It explains why paying off high-interest debt quickly is crucial, why starting to save early is so powerful, and why delaying financial goals 
+            becomes increasingly expensive. Master this concept, and you'll understand why wealthy people often say "time is money."
           </p>
         </CardContent>
       </Card>
