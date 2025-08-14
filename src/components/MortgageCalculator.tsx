@@ -8,7 +8,6 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@
 interface MortgageData {
   homePrice: number
   downPaymentPercent: number
-  loanAmount: number
   interestRate: number
   loanTerm: number
 }
@@ -33,7 +32,6 @@ export function MortgageCalculator() {
   const [data, setData] = useKV<MortgageData>('mortgage-calculator', {
     homePrice: 400000,
     downPaymentPercent: 20,
-    loanAmount: 320000,
     interestRate: 6.5,
     loanTerm: 30
   })
@@ -142,7 +140,7 @@ export function MortgageCalculator() {
   return (
     <div className="space-y-6">
       {/* Input Section */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         <div className="space-y-2">
           <Label htmlFor="home-price">Home Price ($)</Label>
           <Input
@@ -183,16 +181,6 @@ export function MortgageCalculator() {
             value={data.loanTerm}
             onChange={(e) => updateData('loanTerm', Number(e.target.value))}
             placeholder="30"
-          />
-        </div>
-        <div className="space-y-2">
-          <Label htmlFor="loan-amount">Loan Amount ($)</Label>
-          <Input
-            id="loan-amount"
-            type="number"
-            value={data.loanAmount}
-            onChange={(e) => updateData('loanAmount', Number(e.target.value))}
-            placeholder="320000"
           />
         </div>
       </div>
